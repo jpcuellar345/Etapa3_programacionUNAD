@@ -4,7 +4,11 @@ namespace Store.Clases.Estanteria
 {
     class Catalogo
     {
-        private List<Dictionary<string, Book>> infoEjemplarLibro = new List<Dictionary<string, Book>>(); //genero, libro
-
+        private List<Book> catalogo = new List<Book>();
+        public List<Book> _catalogo
+        {
+            get{return catalogo;}
+            set{catalogo = value;}
+        }
     }
 }
