@@ -1,6 +1,5 @@
 using Store.Clases.Estanteria;
-using Store.Clases.Bookstore;
-namespace Store.clases.User
+namespace Store.Clases.User
 {
 
     public class User
@@ -50,26 +49,7 @@ namespace Store.clases.User
         {
             this.storesCatalogo = catalogo;
         }
-
-        public void RegistrarLibro(Book libro)
-        {
-            if (!storesCatalogo.Exists(b => b._ISBN == libro._ISBN))
-            { /*por medio del operador lambda y el metodo exists verifico que no exista un libro con el mismo*/
-                storesCatalogo._catalogo.Add(libro);
-                Console.WriteLine($"Libro con ISBN {libro._ISBN} agregado al catálogo.");
-            }
-            else
-            {
-                Console.WriteLine($"Error: El ISBN {libro._ISBN} ya está en uso en el catálogo.");
-            }
-        }
-        public static void EliminarLibro()
-        {
-            //Falta
-        }
-        private static void Abastecer()
-        {
-            //Falta
-        }
+        //el administrador puede usar los metodos de la clase catalogo, revisar si ya los cree
+        
     }
 }

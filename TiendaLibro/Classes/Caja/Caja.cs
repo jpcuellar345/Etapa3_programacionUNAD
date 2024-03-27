@@ -2,7 +2,7 @@ namespace Store.Clases.Registradora
 {
     class Caja
     {
-        private double dineroCaja = 1000000;
+        //private double dineroCaja = 1000000;
         private static void VenderEjemplar()
         {
             //Falta
